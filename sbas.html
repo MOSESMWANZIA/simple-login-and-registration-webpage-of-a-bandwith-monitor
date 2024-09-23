@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandwidth Monitor</title>
+    <link rel="stylesheet" href="sbas.css">
+</head>
+<body>
+    <div id="login-page" class="page">
+        <div class="login-container">
+            <h1>Bandwidth Monitoring System</h1>
+            
+            <label for="email">Email account</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            
+            <input type="checkbox" id="show-password" onclick="togglePassword()"> Show Password
+            
+            <button id="login-btn" onclick="login()">Login</button>
+            <button id="register-btn" onclick="showRegisterPage()">Register</button>
+            
+            <a href="#" id="forgot-password" onclick="forgotPassword()">Forgot Password?</a>
+        </div>
+    </div>
+
+    <div id="register-page" class="page hidden">
+        <div class="register-container">
+            <h1>Register An Account</h1>
+            
+            <label for="reg-email">Email account</label>
+            <input type="email" id="reg-email" placeholder="Enter your email">
+            
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="Enter your full name">
+            
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" placeholder="Enter your password">
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+            
+            <input type="checkbox" id="show-reg-password" onclick="togglePassword('reg')"> Show Password
+            
+            <button id="register-btn" onclick="register()">Register</button>
+            <button id="back-to-login" onclick="showLoginPage()">Back to Login</button>
+        </div>
+    </div>
+
+    <script src="sbas.js"></script>
+</body>
+</html>
